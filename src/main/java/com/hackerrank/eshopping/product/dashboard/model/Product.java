@@ -1,6 +1,10 @@
 package com.hackerrank.eshopping.product.dashboard.model;
 
 
+import javax.persistence.Table;
+
+
+@Table(name = "Product")
 public class Product {
     public Long id;
     private String name;
