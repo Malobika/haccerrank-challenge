@@ -37,8 +37,8 @@ import org.springframework.http.ResponseEntity;
 @RestController
 @RequestMapping(value = "/products")
 public class ProductsController {
-  private final ProductRepository repository;
-  ProductsController(ProductRepository repository) {
+  private final productrepo repository;
+  ProductsController(productrepo repository) {
     this.repository = repository;
   }
   
@@ -60,15 +60,6 @@ public class ProductsController {
 
         return productResponseEntity;
     }
-//Your code above
-    //@GetMapping("?category={category}")
-    //public List getProductsByCategory(@PathVariable String category){
-        //return repository.findByCategory(category);
-    //}
-    //@GetMapping("?category={category}&availability={availability}")
-    //public List getProductsByCategoryAndAvailability(@PathVariable String category, @PathVariable int availability){
-        //return repository.findByCategoryAndAvailability(category, availability);
-    //}
 
 
 
