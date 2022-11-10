@@ -31,6 +31,18 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import org.springframework.http.ResponseEntity;
+import com.hackerrank.eshopping.product.dashboard.model.Product;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.ui.Model;
+
+@Repository
+interface productRepository extends JpaRepository<Product,Long>{
+
+}
+
 
 
 
