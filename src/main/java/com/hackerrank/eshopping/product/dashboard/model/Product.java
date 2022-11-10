@@ -1,7 +1,10 @@
 package com.hackerrank.eshopping.product.dashboard.model;
 
+
+
+
 public class Product {
-    private Long id;
+    public Long id;
     private String name;
     private String category;
     private Double retailPrice;
