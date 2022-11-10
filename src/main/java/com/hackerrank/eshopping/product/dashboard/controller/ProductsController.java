@@ -33,9 +33,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.http.ResponseEntity;
 
 
-interface ProductRepository extends JpaRepository<Product, Long> {
-
-}
 
 @RestController
 @RequestMapping(value = "/products")
@@ -47,7 +44,7 @@ public class ProductsController {
   
   
 
-  // Single item
+
   
   @GetMapping("/{id}")
     public ResponseEntity<Product> getProduct(@PathVariable Long id, @RequestParam(required = false) String category) {
