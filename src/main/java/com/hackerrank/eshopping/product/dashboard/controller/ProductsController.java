@@ -37,8 +37,8 @@ import org.springframework.http.ResponseEntity;
 @RestController
 @RequestMapping(value = "/products")
 public class ProductsController {
-  private final productrepo repository;
-  ProductsController(productrepo repository) {
+  private final productRepository repository;
+  ProductsController(productRepository repository) {
     this.repository = repository;
   }
   

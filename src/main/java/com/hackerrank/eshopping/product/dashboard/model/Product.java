@@ -1,8 +1,6 @@
 package com.hackerrank.eshopping.product.dashboard.model;
 
 
-
-
 public class Product {
     public Long id;
     private String name;
